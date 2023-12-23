@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Login</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script  src="https://kit.fontawesome.com/fe05167a24.js" crossorigin="anonymous"></script>
+  <style>
+  input{border:2px solid grey !important;margin-top:5px; text-indent:2ex;}
+</style>
+</head>
+
+<div class="row" style="margin-top:10ex;">
+  <div class="col s12 l4 push-l4">
+    <form method="post" target="_self">
+      {% csrf_token %}
+      <div class="card" style="padding:2ex;">
+        <br/>
+        <p><b>ENTER EMAIL:</b>
+          <br/>
+          <input name="mail" type="text">
+        </p>
+        <p><b>EMAIL SUBJECT:</b>
+          <br/>
+          <input name="sub" type="text">
+        </p>
+        <p>
+          <b>MESSAGE</b>
+          <textarea name="msg" style="width:100%;height:30ex;padding:2ex;">
+         </textarea>
+        </p>
+        <br/>
+        <center>
+          <button type="submit" class="btn blue">send</button>
+        </center>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+<body>
+</body>
